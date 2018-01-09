@@ -1,0 +1,56 @@
+{  
+	"name": "d7",
+    "description": "Main composer.json for d7",
+    "version": "0.0.3",
+    "repositories": [
+	    {
+			"type": "composer",
+			"url": "https://packages.drupal.org/7"
+	    }
+	],
+    "require": {
+        "sensiolabs/security-checker": "^4.1",
+        "acquia/acquia-sdk-php": "*",
+	    "aura/accept": "^2.2",
+	    "composer/installers": "1.0.24",
+	    "cweagans/composer-patches": "1.6.2",
+	    "derhasi/composer-preserve-paths": "0.1.4",
+	    "drupal/aes": "1.10.0"
+    },
+    "autoload": {
+    	"psr-4": {
+      		"d7\\": "src/"
+    	}
+  	},
+	"config": {
+		"preferred-install": "source",
+		"sort-packages": true,
+		"vendor-dir": "vendor"
+	},
+	"extra": {
+	    "enable-patching": true,
+	    "composer-exit-on-patch-failure": true,
+	    "installer-paths": {
+		      "sites/all/modules/contrib/{$name}/": [
+		        	"type:drupal-module"
+		      ],
+		      "sites/all/themes/{$name}/": [
+		        	"type:drupal-theme"
+		      ],
+		      "sites/all/libraries/{$name}/": [
+		        	"type:drupal-library"
+		      ],
+		      "docroot/": [
+		        	"type:drupal-core"
+		      ]
+	    },
+	    "preserve-paths": [
+	      "sites/all/modules/custom",
+	      "sites/all/modules/contrib",
+	      "sites/all/libraries",
+	      "sites/all/themes",
+	      "sites/default",
+	      "sites/sites.php"
+		]
+	}
+}
