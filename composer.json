@@ -9,14 +9,14 @@
 	    }
 	],
     "require": {
-        "sensiolabs/security-checker": "^4.1",
-        "acquia/acquia-sdk-php": "*",
-	    "aura/accept": "^2.2",
-	    "composer/installers": "1.0.24",
-	    "cweagans/composer-patches": "1.6.2",
-	    "derhasi/composer-preserve-paths": "0.1.4",
-	    "drupal/aes": "1.10.0"
-    },
+		"acquia/acquia-sdk-php": "*",
+		"aura/accept": "^2.2",
+		"composer/installers": "v1.5.0",
+		"cweagans/composer-patches": "1.6.2",
+		"derhasi/composer-preserve-paths": "0.1.4",
+		"drupal/aes": "1.10.0",
+		"sensiolabs/security-checker": "^4.1"
+	},
     "autoload": {
     	"psr-4": {
       		"d7\\": "src/"
