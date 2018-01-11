@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/acquia-sdk-php/zipball/351b778ceae25d7e1c88643f9f0136ff7683ff38",
+                "url": "htttps://api.github.com/repos/acquia/acquia-sdk-php/zipball/351b778ceae25d7e1c88643f9f0136ff7683ff38",
                 "reference": "351b778ceae25d7e1c88643f9f0136ff7683ff38",
                 "shasum": ""
             },
